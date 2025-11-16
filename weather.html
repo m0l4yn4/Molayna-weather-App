@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Molayna weather</title>
+    <link rel="stylesheet" href="weather.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Lao:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1>⛅Molayna weather☁️</h1>
+        <div class="search-box">
+            <input type="text" id="cityInput" placeholder="ຊື່ເມືອງ...">
+            <button id="searchBtn">ຄົ້ນຫາ</button>
+        </div>
+        
+        <div class="results hidden" id="weatherResult">
+            <h2 id="cityName"></h2>
+            <p id="temperature"></p>
+            <p id="description"></p>
+            <img id="weatherIcon" src="" alt="weather icon" />
+            <p id="humidity"></p>
+            <p id="wind"></p>
+            <p id="pressure"></p>
+            <p id="sunrise"></p>
+            <p id="sunset"></p>
+        </div>
+        
+        <div class="history">
+            <h3>ສິ່ງທີ່ຄົ້ນຫາກ່ອນໜ້ານີ້</h3>
+            <ul id="historyList">
+            </ul>
+        </div>
+
+        <p id="errorMsg" class="error"></p>
+    </div>
+    
+    <script src="weather.js"></script>
+    
+</body>
+
+</html>

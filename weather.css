@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(180deg,#B4D1F3, #8FC0FF, #2a9bfe);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.8s ease;
+    font-family: 'Noto Sans Lao', sans-serif;
+}
+
+    .container {
+        background-color: white;
+        padding: 25px;
+        border-radius: 15px;
+        width: 380px;
+        box-shadow: 0, 5px, 15px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        
+        h1 {
+            color: #3098D5;
+        }
+        
+        .search-box {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        
+        input {
+            flex: 1;
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+        
+        button {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 8px;
+            background-color: #0984e3;
+            color: white;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background: #74b9ff;
+        }
+        
+        .result img {
+            width: 80px;
+            height: 80px;
+        }
+        
+        .hidden {
+            display: none;
+        }
+        
+        .error {
+            color: red;
+            font-size: 14px;
+        }
+        
+        .history {
+            margin-top: 15px;
+            text-align: left;
+            
+            ul {
+                list-style: none;
+                padding: 0;
+                
+                li {
+                    padding: 5px;
+                    cursor: pointer;
+                    border-bottom: 1px solid #ddd;
+                }
+                
+                li:hover {
+                   background-color: #f1f1f1;
+                }
+            }
+        }
+    }
+
+    /* change background */
+    
+    .clear {
+        background: linear-gradient(180deg, #74b9ff, #a7eaff);
+    }
+    
+    .clouds {
+        background: linear-gradient(180deg, #dfe6e9, #b2bec3);
+    }
+    
+    .rain {
+        background: linear-gradient(180deg, #74b9ff, #0984e3);
+    }
+    
+    .thunder {
+        background: linear-gradient(180deg, #6c5ce7, #341f97);
+    }
+    
+    .mist {
+        background: linear-gradient(180deg, #eeeeee, #cccccc);
+    }
