@@ -63,7 +63,7 @@ function displayWeather(data) {
     description.textContent = data.weather[0].description;
     humidity.textContent = `💧 ຄວາມຊື້ນ: ${data.main.humidity} %`
     wind.textContent = `🌬️ ລົມ: ${data.wind.speed} m/s`;
-    pressure.textCont = `📊 ຄວາມກົດອະກາດ: ${data.main.pressure} hPa`;
+    pressure.textCont = `📊  ${data.main.pressure} hPa`;
     sunrise.textContent = `🌅 ຕາເວັນຂື້ນ: ${new Date(data.sys.sunrise*1000).toLocaleTimeString()}`;
     sunset.textContent = `🌄  ຕາເວັນຕົກ: ${new Date(data.sys.sunset*1000).toLocaleTimeString()}`; 
     
