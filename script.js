@@ -1,4 +1,4 @@
-ອົງສາ searchBtn = document.getElementById("searchBtn");
+const searchBtn = document.getElementById("searchBtn");
 const cityInput = document.getElementById("cityInput");
 const weatherResult = document.getElementById("weatherResult");
 const cityName = document.getElementById("cityName");
