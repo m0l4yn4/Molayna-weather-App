@@ -33,7 +33,7 @@ cityInput.addEventListener("keydown", e => {
 async function getWeather() {
     const city = cityInput.value.trim();
     if (city === "") {
-        showError("ກະລຸນາພິມຊື່ເມືອງກ່ອນ");
+        showError("ກະລຸນາພິມຊື່ເມືອງກ່ອນ!");
         return;
     }
     
