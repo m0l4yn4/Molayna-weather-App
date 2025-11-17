@@ -1,4 +1,4 @@
-const searchBtn = document.getElementById("searchBtn");
+ອົງສາ searchBtn = document.getElementById("searchBtn");
 const cityInput = document.getElementById("cityInput");
 const weatherResult = document.getElementById("weatherResult");
 const cityName = document.getElementById("cityName");
@@ -59,11 +59,11 @@ function displayWeather(data) {
     weatherResult.classList.remove("hidden");
     
     cityName.textContent = `${data.name}, ${data.sys.country}`;
-    temperature.textContent = `🌡️ ອົງສາ: ${data.main.temp.toFixed(1)} °C`;
+    temperature.textContent = `🌡️  ${data.main.temp.toFixed(1)} ອົງສາ°C`;
     description.textContent = data.weather[0].description;
     humidity.textContent = `💧 ຄວາມຊື້ນ: ${data.main.humidity} %`
     wind.textContent = `🌬️ ລົມ: ${data.wind.speed} m/s`;
-    pressure.textCont = `📊  ${data.main.pressure} hPa`;
+    pressure.textContent = `📊  ຄວາມກົດອາກາດ ${data.main.pressure} hPa`;
     sunrise.textContent = `🌅 ຕາເວັນຂື້ນ: ${new Date(data.sys.sunrise*1000).toLocaleTimeString()}`;
     sunset.textContent = `🌄  ຕາເວັນຕົກ: ${new Date(data.sys.sunset*1000).toLocaleTimeString()}`; 
     
