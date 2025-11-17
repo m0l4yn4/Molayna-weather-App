@@ -148,3 +148,5 @@ function renderHistory() {
         historyList.appendChild(li);
     });
 }
+
+console.log("gg")
